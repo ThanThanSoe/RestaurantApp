@@ -80,6 +80,5 @@ public class MainActivity extends BaseActivity implements RestaurantItemDelegate
     public void onSearchFilter(String searchWord) {
         List<RestaurantVO> resultList = restaurantModel.filterResturant(searchWord);
         adapter.setNewData(resultList);
-        recyclerView.setAdapter(adapter);
     }
 }

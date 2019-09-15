@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="135"
+            android:pivotX="45%"
+            android:pivotY="30%">
+            <shape
+                android:shape="oval">
+
+                <gradient
+                    android:startColor="@android:color/holo_blue_light"
+                    android:endColor="@android:color/holo_purple"/>
+
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

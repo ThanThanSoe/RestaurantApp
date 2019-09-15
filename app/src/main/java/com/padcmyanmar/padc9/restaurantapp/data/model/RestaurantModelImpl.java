@@ -58,8 +58,10 @@ public class RestaurantModelImpl extends BaseModel implements EventModel {
         List<RestaurantVO> restaurantVOList = mDatabase.restaurantDao().getAllRestaurantFromDB();
         List<RestaurantVO> result = new ArrayList<>();
         for (RestaurantVO restaurantVO : restaurantVOList){
-            if (restaurantVO.getName().contains(query));
-            result.add(restaurantVO);
+            if (restaurantVO.getName().contains(query)){
+                result.add(restaurantVO);
+            }
+
         }
         return result;
     }
